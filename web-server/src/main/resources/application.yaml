@@ -1,0 +1,9 @@
+spring:
+  servlet:
+    multipart:
+      maxFileSize: 250MB
+      maxRequestSize: 250MB
+
+logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+server:
+  port: 8125

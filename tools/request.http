@@ -1,0 +1,18 @@
+###
+
+# curl -X POST "http://localhost:8080/manage/upload?commitId=Andrusha&projectId=test282"
+#   -H "accept: */*"
+#   -H "Content-Type: multipart/form-data"
+#   -F "file=@test.zip" \
+POST http://localhost:8125/manage/upload?commitId=Andrusha&projectId=test282
+accept: */*
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="test.zip"
+
+< test.zip
+--WebAppBoundary--
+
+###
+

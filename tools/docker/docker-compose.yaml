@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  ignite:
+    image: web-server:0.0.1-SNAPSHOT
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    container_name: web-server
+    ports:
+      - "8125:8080"
+    volumes:
+      - "../../data:/var/data"
