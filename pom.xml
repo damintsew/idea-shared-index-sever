@@ -45,6 +45,12 @@
                         </goals>
                     </execution>
                 </executions>
+
+                <configuration>
+                    <image>
+                        <name>damintsew/shared-index-server:${project.version}</name>
+                    </image>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
@@ -62,6 +68,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>

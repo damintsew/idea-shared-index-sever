@@ -24,12 +24,13 @@ public class LocalFileService implements FileService {
 
     @Override
     public void uploadNewIndex(UploadIndexRequest indexRequest, MultipartFile archiverFiles) {
-        Path basePathForFiles = Path.of(basePath, "project", indexRequest.getCommitId(), indexRequest.getCommitId());
+        Path basePathForFiles = Path.of(basePath, "project", indexRequest.getProjectId(),
+                indexRequest.getCommitId());
 
         try (ZipInputStream zis = new ZipInputStream(archiverFiles.getInputStream())) {
             Files.createDirectories(basePathForFiles);
 
-            ZipEntry zipEntry = null;
+            ZipEntry zipEntry;
             while ((zipEntry = zis.getNextEntry()) != null) {
                 Path filePath = basePathForFiles.resolve(Path.of(zipEntry.getName()));
 

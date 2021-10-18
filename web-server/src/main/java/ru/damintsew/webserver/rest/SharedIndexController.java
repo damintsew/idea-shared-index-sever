@@ -23,6 +23,6 @@ public class SharedIndexController {
                         @RequestParam String projectId,
                         @RequestParam("file") MultipartFile file) {
 
-        fileService.uploadNewIndex(new UploadIndexRequest("test", "test"), file);
+        fileService.uploadNewIndex(new UploadIndexRequest(commitId, projectId), file);
     }
 }
