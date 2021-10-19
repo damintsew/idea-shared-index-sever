@@ -21,7 +21,7 @@ public class RequestLoggingFilterConfig {
     }
 
     @Bean
-    public ServletRegistrationBean<SharedIndexServlet> exampleServletBean(FileService fileService) {
+    public ServletRegistrationBean<SharedIndexServlet> sharedIndexServletBean(FileService fileService) {
         ServletRegistrationBean<SharedIndexServlet> bean = new ServletRegistrationBean<>(
                 new SharedIndexServlet(fileService), "/shared-index/*");
         bean.setLoadOnStartup(1);

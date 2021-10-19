@@ -1,11 +1,12 @@
 version: "3.8"
 services:
   ignite:
-    image: web-server:0.0.1-SNAPSHOT
+    image: damintsew/shared-index-server:0.0.1-SNAPSHOT
     environment:
       - SPRING_PROFILES_ACTIVE=docker
+      - BASE-URL=http://localhost:8125/shared-index
     container_name: web-server
     ports:
-      - "8125:8080"
+      - "8125:8125"
     volumes:
-      - "../../data:/var/data"
+      - "../../data:/var/data:"

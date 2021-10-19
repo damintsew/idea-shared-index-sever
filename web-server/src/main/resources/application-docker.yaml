@@ -1,2 +1,2 @@
-base-path:
-base-url: http://localhost:8125/shared-index
+base-path: /var/data
+base-url:
