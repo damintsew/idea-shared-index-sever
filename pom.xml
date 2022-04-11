@@ -29,6 +29,7 @@
     <repositories>
         <repository>
             <id>jetbrains</id>
+            <name>Jet brain CDN plugin repo</name>
             <url>https://packages.jetbrains.team/maven/p/ij/intellij-shared-indexes-public</url>
         </repository>
     </repositories>
