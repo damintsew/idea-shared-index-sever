@@ -1,2 +1,4 @@
 base-path: C:\\Work\\dev\\Java_my\\shared-index-sever\\data
 base-url: http://localhost:8125/shared-index
+
+PORT: 8125
