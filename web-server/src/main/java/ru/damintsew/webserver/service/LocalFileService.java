@@ -32,7 +32,9 @@ public class LocalFileService implements FileService {
 
             ZipEntry zipEntry;
             while ((zipEntry = zis.getNextEntry()) != null) {
+                System.out.println("zipEntry.name = " + zipEntry.getName());
                 Path filePath = basePathForFiles.resolve(Path.of(zipEntry.getName()));
+                System.out.println("filePath = " + filePath.toString());
 
                 Files.copy(zis, filePath, StandardCopyOption.REPLACE_EXISTING);
             }
