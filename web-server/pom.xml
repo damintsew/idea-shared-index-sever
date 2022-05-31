@@ -39,12 +39,12 @@
         <dependency>
             <groupId>com.jetbrains.intellij.indexing.shared</groupId>
             <artifactId>cdn-layout-common</artifactId>
-            <version>0.8.65</version>
+            <version>0.8.66</version>
         </dependency>
         <dependency>
             <groupId>com.jetbrains.intellij.indexing.shared</groupId>
             <artifactId>cdn-layout-tool</artifactId>
-            <version>0.8.65</version>
+            <version>0.8.66</version>
         </dependency>
 
         <dependency>

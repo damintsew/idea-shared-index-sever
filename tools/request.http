@@ -4,7 +4,7 @@
 #   -H "accept: */*"
 #   -H "Content-Type: multipart/form-data"
 #   -F "file=@test.zip" \
-POST http://localhost:8125/manage/upload?commitId=Andrusha&projectId=test282
+POST http://localhost:8125/manage/upload?commitId=Andrusha228&projectId=test282
 accept: */*
 Content-Type: multipart/form-data; boundary=WebAppBoundary
 
